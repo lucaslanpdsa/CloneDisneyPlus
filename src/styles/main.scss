@@ -1,5 +1,88 @@
-$color: red;
+@use "variaveis";
+@use 'hero';
+
+@font-face {
+  font-family: Avenir;
+  src: url(../../assets/fonts/Avenir-Regular.woff2)
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-  background-color: $color;
+  font-family: Avenir, sans-serif;
+  background-color: variaveis.$corDeFundo;
+  color: variaveis.$corTextoSecundario;
+
+}
+
+@mixin font-size($fontSize: 16px) {
+  font-size: $fontSize;
+  line-height: $fontSize + 10px;
+}
+
+@mixin text($fontSize: 16px) {
+  font-size: $fontSize;
+  line-height: $fontSize + 10px;
+}
+
+@mixin title($fontSize: 28px) {
+  @include text($fontSize);
+}
+
+.text--big {
+  @include text(18px);
+}
+
+.text {
+  @include text();
+}
+
+.text--small {
+  @include text(12px);
+}
+
+.link-text {
+  @include text(18px);
+  color: variaveis.$corTextoSecundario;
+  text-decoration: underline;
+  @include font-size(20px)
+}
+
+.title--big {
+  @include text(44px);
+}
+
+.title {
+  @include title(40px);
+}
+
+.title--small {
+  @include title(28px);
+}
+
+.btn {
+  padding: 20px 33px;
+  text-decoration: none;
+  color: variaveis.$corTextoSecundario;
+  background-color: #6421ff;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 4px;
+  @include font-size(18px)
+}
+
+.btn--login {
+  padding: 12px 16px;
+  background-color: transparent;
+  color: variaveis.$corTextoSecundario;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid variaveis.$corTextoSecundario;
+  border-radius: 4px;
+  @include font-size(18px)
 }

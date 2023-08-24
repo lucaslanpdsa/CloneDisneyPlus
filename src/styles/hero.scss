@@ -1,0 +1,56 @@
+@use "variaveis";
+
+.hero {
+  padding: 5.6vw;
+  min-height: 80vh;
+  background-image: url(https://cnbl-cdn.bamgrid.com/assets/6ad18f0d3ba4e6f51d1cb530683e1f0feca89858a176ecce9a76ebcaf43c7bd7/original);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+
+  &__nav {
+    position: absolute;
+    right: 35px;
+    top: 25px;
+
+    .btn--login {
+      &:hover {
+        background-color: variaveis.$corTextoSecundario;
+        color: black;
+      }
+    }
+  }
+
+  &__content {
+    max-width: 640px;
+
+    &__branding {
+      max-width: 180px;
+      margin-bottom: 2vw;
+    }
+
+    .title--big {
+      margin-bottom: 30px;
+    }
+
+    &__p {
+      margin-bottom: 20px;
+
+      &__btn {
+        display: block;
+        width: 100%;
+        max-width: 650px;
+      }
+    }
+
+    .seta-baixo {
+      color: variaveis.$corTextoPrincipal;
+      font-size: 25px;
+
+      &:hover {
+        color: variaveis.$corTextoSecundario;
+      }
+    }
+
+  }
+}
