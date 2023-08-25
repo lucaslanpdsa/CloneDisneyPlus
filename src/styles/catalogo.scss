@@ -1,6 +1,8 @@
 @use "variaveis";
 
 .catalogo {
+  margin: 0 auto;
+  max-width: 88.8vw;
   text-align: center;
 
   &__title {
@@ -10,14 +12,15 @@
   &__subtitulo {
     color: variaveis.$corTextoPrincipal;
     margin-bottom: 20px;
+
   }
 
   &__grid {
     display: grid;
-    grid-template-columns: repeat(3, 32%);
+    grid-template-columns: repeat(3, 31%);
     grid-template-rows: 1fr 1fr;
     justify-content: space-between;
-    padding: 0 5.6vw 5.6vw;
+    padding: 0 0 5.6vw;
     gap: 24px;
 
     img {

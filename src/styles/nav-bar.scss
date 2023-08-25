@@ -13,11 +13,11 @@
   padding: 10px 35px;
   position: fixed;
   align-items: center;
+  z-index: 2;
 }
 
 .navbar {
   position: sticky;
-  object-fit: contain;
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -38,6 +38,8 @@
     align-items: center;
     display: flex;
 
+
+
     &--assine {
       background-color: #0063e5;
       border: 1px solid transparent;
@@ -46,8 +48,11 @@
 
     &--entrar {
       display: block;
+
+      &:hover {
+        background-color: variaveis.$corTextoSecundario;
+        color: black;
+      }
     }
   }
-
-
 }

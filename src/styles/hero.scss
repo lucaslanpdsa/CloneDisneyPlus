@@ -15,11 +15,6 @@
       position: relative;
       left: 1150px;
       bottom: 25px;
-
-      &:hover {
-        background-color: variaveis.$corTextoSecundario;
-        color: black;
-      }
     }
   }
 
@@ -42,6 +37,7 @@
         display: block;
         width: 100%;
         max-width: 650px;
+        font-size: 18px;
       }
     }
 

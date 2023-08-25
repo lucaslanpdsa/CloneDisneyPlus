@@ -2,6 +2,12 @@
 @use 'hero';
 @use "catalogo";
 @use "nav-bar";
+@use "planos";
+
+@font-face {
+  font-family: Avenir;
+  src: url(../../assets/fonts/Avenir-Bold.woff2)
+}
 
 @font-face {
   font-family: Avenir;
@@ -36,7 +42,7 @@ body {
 }
 
 .text--big {
-  @include text(18px);
+  @include text(20px);
 }
 
 .text {
@@ -45,6 +51,7 @@ body {
 
 .text--small {
   @include text(12px);
+  color: variaveis.$corTextoPrincipal
 }
 
 .link-text {
@@ -72,8 +79,8 @@ body {
   text-align: center;
   text-transform: uppercase;
   border-radius: 4px;
-  @include font-size(18px);
   color: variaveis.$corTextoSecundario;
+  font-size: 14px;
 }
 
 .btn--login {
@@ -86,4 +93,12 @@ body {
   border-radius: 4px;
   @include font-size(18px);
   color: variaveis.$corTextoSecundario;
+}
+
+.btn--azul {
+  background-color: #0063e5;
+}
+
+.btn-roxo {
+  background-color: #6421ff;
 }
