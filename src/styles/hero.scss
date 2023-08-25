@@ -6,14 +6,16 @@
   background-image: url(https://cnbl-cdn.bamgrid.com/assets/6ad18f0d3ba4e6f51d1cb530683e1f0feca89858a176ecce9a76ebcaf43c7bd7/original);
   background-repeat: no-repeat;
   background-size: 100%;
-  position: relative;
+
 
   &__nav {
-    position: absolute;
-    right: 35px;
-    top: 25px;
+    width: 100%;
 
     .btn--login {
+      position: relative;
+      left: 1150px;
+      bottom: 25px;
+
       &:hover {
         background-color: variaveis.$corTextoSecundario;
         color: black;

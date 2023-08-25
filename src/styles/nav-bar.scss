@@ -1,0 +1,53 @@
+@use "variaveis";
+
+.none {
+  display: none;
+}
+
+.bg {
+  background-color: variaveis.$corDeFundo;
+}
+
+.cabecalho {
+  width: 100%;
+  padding: 10px 35px;
+  position: fixed;
+  align-items: center;
+}
+
+.navbar {
+  position: sticky;
+  object-fit: contain;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    max-width: 180px;
+
+
+    img {
+      width: 100px;
+    }
+  }
+
+  .navbar__btn {
+    margin: 3px 0 6px;
+    max-height: 50px;
+    align-items: center;
+    display: flex;
+
+    &--assine {
+      background-color: #0063e5;
+      border: 1px solid transparent;
+      margin-right: 10px;
+    }
+
+    &--entrar {
+      display: block;
+    }
+  }
+
+
+}

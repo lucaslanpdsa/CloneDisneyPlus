@@ -8,10 +8,18 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 <body>
-  <section class="hero">
-    <nav class="hero__nav">
-      <a href="#" class="btn--login">Entrar</a>
+  <header class="cabecalho" id="cabecalho">
+    <nav class="navbar" id="navbar">
+      <div class="navbar__logo">
+        <img src="http://127.0.0.1:5500/dist//images/disneyplus.svg" id="nav-logo" class="none">
+      </div>
+      <div class="navbar__btn">
+        <a href="#" class="btn--login navbar__btn--assine none" id="btn-assine">Assine agora</a>
+        <a href="#" class="btn--login navbar__btn--entrar">Entrar</a>
+      </div>
     </nav>
+  </header>
+  <section class="hero">  
     <div class="hero__content">
       <h1 class="hero__content__branding">
         <img src="http://127.0.0.1:5500/dist//images/disneyplus.svg" alt="disney+">
@@ -23,7 +31,7 @@
         <a href="" class="hero__content__p__btn btn">
           Aproveite a oferta Combo+
         </a> <br>
-        <span class="link-text">
+        <span class="link-text" id="some-nav">
           Assinar somente o Disney+
         </span>
       </p>
@@ -34,5 +42,24 @@
       </a>
     </div>
   </section>
+  <section class="catalogo">
+    <div class="catalogo__title title">
+        Originais Disney+ exclusivos
+    </div>
+    <p class="catalogo__subtitulo">Só no Disney+ você vê os melhores filmes, séries, curtas e outros conteúdos inéditos.</p>
+    <div class="catalogo__grid">
+        <img src="//cnbl-cdn.bamgrid.com/assets/1742d878d2d5475eae2afba94902b3b41b313fe1f0897579c3293c5b82c70693/original" alt="">
+        <img src="//cnbl-cdn.bamgrid.com/assets/1742d878d2d5475eae2afba94902b3b41b313fe1f0897579c3293c5b82c70693/original" alt="">
+        <img src="//cnbl-cdn.bamgrid.com/assets/1742d878d2d5475eae2afba94902b3b41b313fe1f0897579c3293c5b82c70693/original" alt="">
+        <img src="//cnbl-cdn.bamgrid.com/assets/1742d878d2d5475eae2afba94902b3b41b313fe1f0897579c3293c5b82c70693/original" alt="">
+        <img src="//cnbl-cdn.bamgrid.com/assets/1742d878d2d5475eae2afba94902b3b41b313fe1f0897579c3293c5b82c70693/original" alt="">
+        <img src="//cnbl-cdn.bamgrid.com/assets/1742d878d2d5475eae2afba94902b3b41b313fe1f0897579c3293c5b82c70693/original" alt="">
+        <img src="//cnbl-cdn.bamgrid.com/assets/1742d878d2d5475eae2afba94902b3b41b313fe1f0897579c3293c5b82c70693/original" alt="">
+        <img src="//cnbl-cdn.bamgrid.com/assets/1742d878d2d5475eae2afba94902b3b41b313fe1f0897579c3293c5b82c70693/original" alt="">
+        <img src="//cnbl-cdn.bamgrid.com/assets/1742d878d2d5475eae2afba94902b3b41b313fe1f0897579c3293c5b82c70693/original" alt="">
+    </div>
+  </section>
+
+  <script src="./src/scripts/main.js"></script>
 </body>
 </html>
