@@ -1,8 +1,18 @@
 @use "variaveis";
 
 .none {
-  display: none;
+  opacity: 0;
+  transition: opacity .5s linear;
+
 }
+
+.navbar__btn .none {
+  opacity: 0;
+  transition: opacity .5s linear;
+}
+
+//o btn ja tem o display flex e isso sobrescreve o display none, por isso adicionei o ".navbar__btn" para dar mas peso na cascata
+
 
 .bg {
   background-color: variaveis.$corDeFundo;
@@ -33,26 +43,11 @@
   }
 
   .navbar__btn {
-    margin: 3px 0 6px;
-    max-height: 50px;
     align-items: center;
     display: flex;
 
-
-
     &--assine {
-      background-color: #0063e5;
-      border: 1px solid transparent;
       margin-right: 10px;
-    }
-
-    &--entrar {
-      display: block;
-
-      &:hover {
-        background-color: variaveis.$corTextoSecundario;
-        color: black;
-      }
     }
   }
 }

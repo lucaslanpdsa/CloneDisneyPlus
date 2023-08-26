@@ -7,17 +7,6 @@
   background-repeat: no-repeat;
   background-size: 100%;
 
-
-  &__nav {
-    width: 100%;
-
-    .btn--login {
-      position: relative;
-      left: 1150px;
-      bottom: 25px;
-    }
-  }
-
   &__content {
     max-width: 640px;
 
@@ -32,13 +21,6 @@
 
     &__p {
       margin-bottom: 20px;
-
-      &__btn {
-        display: block;
-        width: 100%;
-        max-width: 650px;
-        font-size: 18px;
-      }
     }
 
     .seta-baixo {
