@@ -3,6 +3,7 @@
 @use "catalogo";
 @use "nav-bar";
 @use "planos";
+@use "banner1";
 
 @font-face {
   font-family: Avenir;
@@ -24,6 +25,7 @@ body {
   font-family: Avenir, sans-serif;
   background-color: variaveis.$corDeFundo;
   color: variaveis.$corTextoSecundario;
+  letter-spacing: .2px;
 }
 
 @mixin font-size($fontSize: 16px) {

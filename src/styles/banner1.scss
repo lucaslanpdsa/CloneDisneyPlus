@@ -1,0 +1,24 @@
+@use "variaveis";
+
+.banner1 {
+  display: flex;
+  max-width: 88.8vw;
+  margin: 0 auto 10vw;
+  text-align: center;
+
+  &__img {
+    max-width: 50%;
+  }
+
+  &__texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+    padding: 2vw;
+
+    p {
+      color: variaveis.$corTextoPrincipal;
+    }
+  }
+}
