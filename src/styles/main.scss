@@ -7,6 +7,7 @@
 @use "banner2";
 @use "dispositivos";
 @use "footer";
+@use "faq";
 
 @font-face {
   font-family: Avenir;
@@ -22,7 +23,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  list-style: none;
 }
 
 body {
@@ -125,4 +125,8 @@ body {
 
 .btn--roxo {
   background-color: #6421ff;
+}
+
+.none {
+  display: none;
 }

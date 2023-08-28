@@ -1,12 +1,11 @@
 @use "variaveis";
 
-.none {
+.navbar--none {
   opacity: 0;
   transition: opacity .5s linear;
-
 }
 
-.navbar__btn .none {
+.navbar__btn .navbar--none {
   opacity: 0;
   transition: opacity .5s linear;
 }
@@ -34,11 +33,10 @@
   align-items: center;
 
   &__logo {
-    max-width: 180px;
-
+    width: 64px;
 
     img {
-      width: 100px;
+      width: 64px;
     }
   }
 

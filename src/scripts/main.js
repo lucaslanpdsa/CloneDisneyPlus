@@ -10,15 +10,15 @@ document.addEventListener("scroll", function() {
     cabecalho.classList.add("bg")
 
     navLogo = document.getElementById('nav-logo')
-    navLogo.classList.remove("none")
+    navLogo.classList.remove("navbar--none")
 
     btnAssine = document.getElementById('btn-assine')
-    btnAssine.classList.remove("none")
+    btnAssine.classList.remove("navbar--none")
   } 
   else {
     cabecalho.classList.remove("bg")
-    navLogo.classList.add("none")
-    btnAssine.classList.add("none")
+    navLogo.classList.add("navbar--none")
+    btnAssine.classList.add("navbar--none")
     console.log("nao deu")
   }
 });

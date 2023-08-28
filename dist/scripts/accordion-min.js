@@ -1,0 +1,1 @@
+let Colapse=document.querySelectorAll(".faq__accordion__colapse"),btnColapse=document.querySelectorAll(".accordion-colapse-btn");for(let e=0;e<btnColapse.length;e++)btnColapse[e].addEventListener("click",function(){Colapse[e].classList.toggle("faq__accordion__colapse--isactive")});
