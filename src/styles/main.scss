@@ -60,6 +60,7 @@ body {
 }
 
 .link-text {
+  cursor: pointer;
   @include font-size(18px);
   text-decoration: underline;
   @include font-size(20px)

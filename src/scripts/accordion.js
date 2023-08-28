@@ -1,5 +1,5 @@
 let Colapse = document.querySelectorAll(".faq__accordion__colapse")
-let btnColapse = document.querySelectorAll(".accordion-colapse-btn")
+let btnColapse = document.querySelectorAll(".faq__accordion")
 let dash = document.querySelectorAll(".accordion-colapse-btn--dash")
 let plus = document.querySelectorAll(".accordion-colapse-btn--plus")
 
