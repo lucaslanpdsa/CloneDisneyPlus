@@ -4,6 +4,8 @@
 @use "nav-bar";
 @use "planos";
 @use "banner1";
+@use "banner2";
+@use "dispositivos";
 
 @font-face {
   font-family: Avenir;
@@ -19,6 +21,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
 }
 
 body {
@@ -81,6 +84,7 @@ body {
   border-radius: 4px;
   color: variaveis.$corTextoSecundario;
   font-size: 14px;
+  text-transform: uppercase
 }
 
 .btn--nav {

@@ -23,8 +23,13 @@
     padding: 0 0 5.6vw;
     gap: 24px;
 
-    img {
-      width: 100%;
+    &__item {
+      list-style: none;
+
+      img {
+        width: 100%;
+        border-radius: 4px;
+      }
     }
   }
 }
