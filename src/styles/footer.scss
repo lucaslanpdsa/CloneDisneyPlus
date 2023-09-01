@@ -28,6 +28,25 @@
 
       &--idioma {
         display: flex;
+
+        select {
+          background-color: transparent;
+          color: variaveis.$corTextoPrincipal;
+          border: none;
+          margin-left: 4px;
+
+          &:hover {
+            border: none;
+            color: variaveis.$corTextoSecundario;
+            text-decoration: underline;
+          }
+
+          option {
+            border: none;
+            background-color: white;
+            color: #040714;
+          }
+        }
       }
     }
   }

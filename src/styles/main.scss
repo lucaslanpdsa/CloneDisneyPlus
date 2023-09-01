@@ -96,13 +96,15 @@ body {
 }
 
 .btn--login {
-  background-color: transparent;
+  background-color: variaveis.$corDeFundo;
+  opacity: 80%;
   border: 1px solid variaveis.$corTextoPrincipal;
   color: variaveis.$corTextoSecundario;
 
   &:hover {
     background-color: variaveis.$corTextoSecundario;
     color: black;
+    opacity: 100%;
   }
 }
 
