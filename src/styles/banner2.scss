@@ -8,6 +8,10 @@
   align-items: center;
   margin-bottom: 20vw;
 
+  &__img--sm {
+    display: none;
+  }
+
   &__img {
     width: 100%;
   }
@@ -35,6 +39,10 @@
       max-width: 100%;
     }
 
+    &__img--sm {
+      display: block;
+    }
+
     &__img--lg {
       display: none;
     }
@@ -50,6 +58,10 @@
 @media (min-width: 640px) and (max-width: 1025px) {
   .banner2 {
     padding-top: 20vw;
+
+    &__img--sm {
+      display: block;
+    }
 
     &__img--lg {
       display: none;

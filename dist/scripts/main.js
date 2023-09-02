@@ -19,7 +19,6 @@ document.addEventListener("scroll", function() {
     cabecalho.classList.remove("bg")
     navLogo.classList.add("navbar--none")
     btnAssine.classList.add("navbar--none")
-    console.log("nao deu")
   }
 });
 
