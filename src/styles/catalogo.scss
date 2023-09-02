@@ -33,3 +33,19 @@
     }
   }
 }
+
+@media (max-width: 640px) {
+  .catalogo {
+    &__grid {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 20vw;
+      justify-content: center;
+
+      &__item {
+        max-width: 45%;
+        width: 100%;
+      }
+    }
+  }
+}

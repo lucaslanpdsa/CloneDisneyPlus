@@ -17,8 +17,26 @@
     text-align: start;
     padding: 2vw;
 
+    h2 {
+      margin-bottom: 16px;
+    }
+
     p {
       color: variaveis.$corTextoPrincipal;
+    }
+  }
+}
+
+@media (max-width: 1025px) {
+  .banner1 {
+    display: block;
+
+    &__img {
+      max-width: 100%;
+    }
+
+    &__texto {
+      text-align: center;
     }
   }
 }

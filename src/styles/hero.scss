@@ -34,3 +34,31 @@
 
   }
 }
+
+@media (min-width: 640px) and (max-width: 1025px) {
+  .hero {
+    background-image: url(https://cnbl-cdn.bamgrid.com/assets/5a45639d9893e659e6c1f28247b2a288f0f5312c3e05f349a35a6b9f8904e919/original);
+    text-align: center;
+
+    &__content {
+      padding-top: 50vw;
+      max-width: 100%;
+    }
+
+    .btn--principal {
+      max-width: 100%;
+    }
+
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    background-image: url(https://cnbl-cdn.bamgrid.com/assets/a611d9cd7df31f314ffeb6477211852762b9a54868d59d973fc102f111a4f977/original);
+    text-align: center;
+
+    &__content {
+      padding-top: 50vw;
+    }
+  }
+}

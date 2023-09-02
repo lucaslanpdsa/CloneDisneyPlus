@@ -8,7 +8,7 @@
   align-items: center;
   margin-bottom: 20vw;
 
-  img {
+  &__img {
     width: 100%;
   }
 
@@ -19,6 +19,40 @@
 
     h2 {
       margin-bottom: 16px;
+    }
+
+    p {
+      color: variaveis.$corTextoPrincipal;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .banner2 {
+    display: block;
+
+    &__img {
+      max-width: 100%;
+    }
+
+    &__img--lg {
+      display: none;
+    }
+
+    &__texto {
+      position: static;
+      text-align: center;
+      max-width: 100%;
+    }
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1025px) {
+  .banner2 {
+    padding-top: 20vw;
+
+    &__img--lg {
+      display: none;
     }
   }
 }

@@ -6,7 +6,7 @@
   text-align: center;
   margin-bottom: calc(38px + 20vw);
 
-  .title--big {
+  .title {
     margin-bottom: 16px;
   }
 
@@ -32,6 +32,21 @@
 
       p {
         color: variaveis.$corTextoPrincipal;
+      }
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .dispositivos {
+    max-width: 90vw;
+
+    &__lista {
+      flex-wrap: wrap;
+      gap: 12px;
+
+      &__item {
+        max-width: calc(50% - 12px);
       }
     }
   }

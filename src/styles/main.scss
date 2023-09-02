@@ -44,6 +44,12 @@ body {
   }
 }
 
+@media (max-width: 640px) {
+  body {
+    @include font-size(15px);
+  }
+}
+
 @mixin font-size($fontSize: 16px) {
   font-size: $fontSize;
   line-height: $fontSize + 10px;
@@ -171,6 +177,13 @@ body {
   padding: 0 16px;
 }
 
+
+.btn--nav {
+  font-size: 13px;
+  height: 40px;
+  padding: 0 8px;
+}
+
 .btn--login {
   background-color: variaveis.$corDeFundo;
   opacity: 80%;
@@ -180,6 +193,12 @@ body {
   &:hover {
     background-color: variaveis.$corTextoSecundario;
     color: black;
+    opacity: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .btn--login {
     opacity: 100%;
   }
 }
