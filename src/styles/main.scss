@@ -25,11 +25,23 @@
   box-sizing: border-box;
 }
 
+@mixin font-size($fontSize: 16px) {
+  font-size: $fontSize;
+  line-height: $fontSize + 10px;
+}
+
 body {
   font-family: Avenir, sans-serif;
   background-color: variaveis.$corDeFundo;
   color: variaveis.$corTextoSecundario;
   letter-spacing: .2px;
+  @include font-size(18px);
+}
+
+@media (min-width: 640px) and (max-width: 1025px) {
+  body {
+    @include font-size(16px);
+  }
 }
 
 @mixin font-size($fontSize: 16px) {
@@ -50,13 +62,43 @@ body {
   @include font-size(20px);
 }
 
+@media (min-width: 640px) and (max-width: 1025px) {
+  .text--big {
+    @include font-size(18px);
+  }
+}
+
+@media (max-width: 640px) {
+  .text--big {
+    @include font-size(16px);
+  }
+}
+
 .text {
-  @include font-size();
+  @include font-size(16px);
+}
+
+@media (min-width: 640px) and (max-width: 1025px) {
+  .text {
+    @include font-size(15px);
+  }
+}
+
+@media (max-width: 640px) {
+  .text {
+    @include font-size(14px);
+  }
 }
 
 .text--small {
   @include font-size(12px);
   color: variaveis.$corTextoPrincipal
+}
+
+@media (max-width: 640px) {
+  .text--small {
+    @include font-size(11px);
+  }
 }
 
 .link-text {
@@ -67,15 +109,51 @@ body {
 }
 
 .title--big {
-  @include font-size(44px);
+  @include title(44px);
+}
+
+@media (min-width: 640px) and (max-width: 1025px) {
+  .title--big {
+    @include title(32px);
+  }
+}
+
+@media (max-width: 640px) {
+  .title--big {
+    @include font-size(26px);
+  }
 }
 
 .title {
   @include title(40px);
 }
 
+@media (min-width: 640px) and (max-width: 1025px) {
+  .title {
+    @include title(28px);
+  }
+}
+
+@media (max-width: 640px) {
+  .title {
+    @include title(24px);
+  }
+}
+
 .title--small {
   @include title(28px);
+}
+
+@media (min-width: 640px) and (max-width: 1025px) {
+  .title--small {
+    @include title(24px);
+  }
+}
+
+@media (max-width: 640px) {
+  .title--small {
+    @include title(22px);
+  }
 }
 
 .btn {
@@ -85,14 +163,12 @@ body {
   text-decoration: none;
   border-radius: 4px;
   color: variaveis.$corTextoSecundario;
-  font-size: 14px;
   text-transform: uppercase
 }
 
 .btn--nav {
   height: 50px;
   padding: 0 16px;
-  @include font-size(18px);
 }
 
 .btn--login {
@@ -112,7 +188,6 @@ body {
   height: 68px;
   max-width: 700px;
   padding: 20.5px 33px;
-  @include font-size(18px);
 }
 
 .btn--plano {
@@ -120,6 +195,7 @@ body {
   max-width: 260px;
   width: 100%;
   padding: 8px 14px;
+  @include font-size(14px);
 }
 
 .btn--azul {
