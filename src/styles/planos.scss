@@ -123,6 +123,10 @@
     width: 100%;
     height: 100%;
     padding: 33px 8px;
+    background-image: url(../images/Vector.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
   }
 }
 
@@ -140,12 +144,6 @@
 
     &__preco {
       padding: 20px 8px;
-    }
-
-    span {
-      background-image: url(https://cnbl-cdn.bamgrid.com/assets/82a511852ed8a12b4eb71493852ee6f622b553c6eb6aaca3d9331ecf63a414b9/original);
-      background-repeat: no-repeat;
-      background-position: center;
     }
   }
 }
